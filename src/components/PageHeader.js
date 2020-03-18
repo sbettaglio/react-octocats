@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderList from './HeaderList'
+import HeaderLinks from './HeaderLinks'
 import githublogo from '../images/GitHub-Mark-32px.png'
 
 export class PageHeader extends Component {
@@ -12,12 +13,7 @@ export class PageHeader extends Component {
             <HeaderList />
           </ul>
         </nav>
-        <a class="twitter" href="https://twitter.com/githubdesign">
-          Follow us on Twitter
-        </a>
-        <a class="git-back" href="https://www.github.com">
-          Back to GitHub.Com
-        </a>
+        <HeaderLinks />
       </>
     )
   }
