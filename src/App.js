@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import HelloWorld from './components/HelloWorld'
 import { render } from 'react-dom'
-import terratocat from './images/Terracottocat_Single.png'
 import Octocat from './components/Octocat'
-import header from './components/header'
+import PageHeader from './components/PageHeader'
 
 class App extends React.Component {
   render() {
     return (
       <>
         <header>
-          <header />
+          <PageHeader />
         </header>
 
         <main>
