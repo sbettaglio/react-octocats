@@ -9,4 +9,352 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(248, 250, 251);
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(254, 254, 254, 0.8);
+  border-bottom: solid 1px rgb(203, 205, 205);
+  width: 100%;
+}
+
+header img {
+  height: 7%;
+  width: 7%;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+header nav {
+  display: flex;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0rem;
+  justify-content: space-between;
+}
+
+header li {
+  justify-content: space-between;
+  padding: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.octodex {
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.git-back {
+  display: none;
+}
+
+.twitter {
+  padding-top: 1.4rem;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+main {
+  /* display: flex;
+  justify-content: space-around; */
+  background-color: rgb(245, 246, 248);
+  padding-top: 0.5px;
+  padding-top: 2rem;
+}
+
+main article section {
+  background-color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  border: solid 1px rgb(219, 221, 227);
+  border-radius: 10px;
+}
+
+main article summary {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  margin-top: 0;
+}
+
+main article summary p {
+  padding-top: 0.5rem;
+  margin-top: 0;
+  font-weight: lighter;
+}
+
+.logo {
+  height: 5%;
+  width: 5%;
+}
+
+main img {
+  width: 97%;
+}
+
+.not-first {
+  margin-top: 1rem;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #586069;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: rgb(248, 250, 251);
+  margin-bottom: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2.5rem;
+  padding-top: 2em;
+  padding-left: 0;
+  border-top: solid 0.5px rgb(219, 221, 227);
+}
+
+footer div {
+  background-color: rgb(248, 250, 251);
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .git-back {
+    display: block;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  header img {
+    height: 4%;
+    width: 4%;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  header nav {
+    padding-left: 0;
+    margin-right: -3rem;
+    padding-right: 15rem;
+  }
+  .not-first {
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    border: solid 1px rgb(219, 221, 227);
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .git-back {
+    display: block;
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  header img {
+    height: 3%;
+    width: 3%;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  header nav {
+    padding-left: 0;
+    margin-right: -8rem;
+    padding-right: 35rem;
+  }
+  .not-first {
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    border: solid 1px rgb(219, 221, 227);
+    border-radius: 10px;
+  }
+  .twitter {
+    padding-right: 1rem;
+    margin-right: 0;
+    margin-left: -9;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+  }
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: space-between;
+  }
+  .git-back {
+    display: block;
+    padding-right: 4rem;
+    padding-left: 0.5rem;
+    padding-top: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  footer {
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  header img {
+    height: 2%;
+    width: 2%;
+    padding-top: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  header nav {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 22rem;
+  }
+  .twitter {
+    padding-left: 5rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+  }
+  .grid1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .not-first {
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    border: solid 1px rgb(219, 221, 227);
+    border-radius: 10px;
+  }
+  main article summary p {
+    padding-top: 0.5rem;
+    margin-top: 0;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+  }
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: space-between;
+  }
+  .git-back {
+    display: block;
+    padding-right: 4rem;
+    padding-left: 0.5rem;
+    padding-top: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  footer {
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  header img {
+    height: 2%;
+    width: 2%;
+    padding-top: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  header nav {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 50rem;
+  }
+  .twitter {
+    padding-left: 7rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+  }
+  .grid1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .not-first {
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    border: solid 1px rgb(219, 221, 227);
+    border-radius: 10px;
+  }
+  main article summary p {
+    padding-top: 0.5rem;
+    margin-top: 0;
+    font-weight: normal;
+  }
 }
